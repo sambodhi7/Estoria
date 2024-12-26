@@ -14,5 +14,11 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
+  corePlugins: {
+    container: false
+  }
+    
 } satisfies Config;

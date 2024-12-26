@@ -2,20 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+  background: conic-gradient(at 62.5% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-8) calc(28px/2), conic-gradient(at 62.5% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(-3*28px/8) calc(28px/4), conic-gradient(at 87.5% 62.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(3*28px/8) calc(28px/4), conic-gradient(at 87.5% 62.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-8) 0, conic-gradient(at 25% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) 0 calc(28px/-4), conic-gradient(at 25% 12.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/-4) 0, conic-gradient(at 87.5% 87.5%, rgba(35, 38, 43, 0.64) 25%, #0000 0) calc(28px/8) 0 #1b1d1d;
+  background-size: 28px 28px;
+  overflow-x: hidden;
+  padding-bottom: 0px;
+  font: normal 16px/1.5 "Titillium Web", sans-serif;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+@font-face {
+  font-family: "Samkaran";
+  src: url("../../public/samkaran.TTF") format("truetype");
+}
+
+body{
+  font: normal 16px/1.5 "Titillium Web", sans-serif;
+}
+
+.header {
+  font-family: "ubuntu";
+  font-size: max(9vw, 70px);
+  color: #fff;
+  text-align: center;
+}
+
+.heading-sec {
+  color: white;
+  font-family: "Samkaran";
+  text-align: center;
+  padding: 4rem;
+  font-size: max(5vw, 50px);
+}
+
+
+.samkaran {
+  font-family: "Samkaran";
+  color: #fff;
+}
+
+.headerLogo {
+  height: 5vw;
+  width: 5vw;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 1s ease;
+  background: #1c1e1e;
+  margin-top: 12rem;
+}
+
+.headerLogo img {
+  height: 8vw;
+  width: 8vw;
+}
+
+.subHeading{
+  font-size: max(6vw, 50px);
+  margin-top: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.flexRow {
+  flex-direction: row;
 }

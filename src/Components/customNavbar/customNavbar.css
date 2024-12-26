@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+    background : linear-gradient(0, #01010100 0%, #000510 90%);
+     
+}
+
+.underline{
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+}
+
+#mobile-menu{
+ 
+    background: rgba( 0, 0, 0, 0.75 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 9.5px );
+-webkit-backdrop-filter: blur( 9.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
