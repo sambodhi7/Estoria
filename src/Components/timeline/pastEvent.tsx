@@ -73,7 +73,7 @@ export default function PastEvent() {
           <span className="font-style">P</span>AST{" "}
           <span className="font-style">E</span>VENTS
         </h1>
-        <ul>
+        <ul className="overflow-x-hidden">
           {pastEvents.map((event, index) => EventCard(event, index, onOpen))}
         </ul>
       </section>
