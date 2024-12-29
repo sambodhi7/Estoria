@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client';
 import { Github, Instagram, Linkedin, Mail, Phone } from "lucide-react"
 import "./card.css"

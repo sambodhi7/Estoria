@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 import "./AnimatedTitle.css"
 
@@ -10,7 +11,7 @@ export default function AnimatedTitle() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    //@ts-ignore
+    //@ts-expect-error
     const ctx = canvas.getContext('2d');
     const w = window.innerWidth;
     const h = window.innerHeight;
@@ -18,12 +19,12 @@ export default function AnimatedTitle() {
     const arc = 100;
     const size = 7;
     const speed = 15;
-    const parts = new Array();
+    const parts  = new Array();
     const colors = ["red", "#f57900", "yellow", "#ce5c00", "#5c3566"];
     const mouse = { x: 0, y: 0 };
-    //@ts-ignore
+    //@ts-expect-error
     canvas.width = w;
-    //@ts-ignore
+    //@ts-expect-error
     canvas.height = h;
 
     let time = 0;

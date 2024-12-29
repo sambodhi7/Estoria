@@ -3,10 +3,7 @@ import "./Footer.css"
 
 export default function Footer() {
 
-    const style = {
-
-    }
-
+   
     return (
         <>
             <div className="w-screen h-[1px] bg-gradient-to-r from-transparent via-white to-transparent"/>
