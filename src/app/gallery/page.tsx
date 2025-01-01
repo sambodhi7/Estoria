@@ -16,6 +16,7 @@ export default function App() {
   const [index, setIndex] = useState(-1);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedEvent, setSelectedEvent] = useState("");
+  const [open, setOpen] = useState(false);
 
   const handleClick = (index: number, item: CustomImage) => setIndex(index);
 
@@ -111,17 +112,40 @@ export default function App() {
       <div className="p-2 rounded-md mb-2">
         {filteredImages.length > 0 ? (
           <>
-            <Gallery
+            {/* <Gallery
               images={filteredImages}
               onClick={handleClick}
               enableImageSelection={false}
-            />
-            <Lightbox
-              slides={filteredSlides}
-              open={index >= 0}
-              index={index}
-              close={() => setIndex(-1)}
-            />
+            /> */}
+
+          <main className="columns-3xs ">
+            {
+              filteredImages.map(
+                (image, index) =>
+                  <img className="m-5 rounded-lg" src={image.src} key={index} onClick={()=>{
+                    setIndex(index);
+                    setOpen(true);
+                  }} />
+              )
+            }
+          </main>
+          
+
+          <Lightbox
+                  open={open}
+                  close={()=>{
+                    setOpen(false);
+                  }}
+
+                  index={index}
+
+                  
+                  slides={
+                    filteredImages.map(
+                      (image) => ({ src: image.src})
+                    )
+                  }
+                />
           </>
         ) : (
           <p className="text-center text-gray-500">No images found.</p>
