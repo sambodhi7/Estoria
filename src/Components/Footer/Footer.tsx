@@ -38,7 +38,7 @@ export default function Footer() {
 
                     </ul>
                 </section>
-                <section className="lg:w-1/3 flex  flex-col justify-center items-center  px-20 py-20 text-center lg:py-0 ">
+                <section className="lg:w-1/3 flex  flex-col justify-center items-center  px-5 py-20 text-center lg:py-0 ">
 
 
                     <h2 className="text-4xl p-5 font-bold">  Find us At : </h2>
