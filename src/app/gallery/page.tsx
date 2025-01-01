@@ -52,7 +52,7 @@ export default function App() {
 
   return (
     <>
-      <div className="head">
+      <div className="head m-5">
         <div className="text-center header">
           <span>G</span>
           <span className="samkaran">allery</span>
@@ -109,7 +109,7 @@ export default function App() {
           </select>
         </div>
       </div>
-      <div className="p-2 rounded-md mb-2">
+      <div className=" rounded-md mb-2 ">
         {filteredImages.length > 0 ? (
           <>
             {/* <Gallery
@@ -118,15 +118,23 @@ export default function App() {
               enableImageSelection={false}
             /> */}
 
-          <main className="columns-3xs ml-5 mr-10">
+          <main className="columns-3xs ml-0 mr-10">
             {
               filteredImages.map(
                 (image, index) =>
-                  <img className="m-5 rounded-lg" src={image.src} key={index} onClick={()=>{
-                    setIndex(index);
-                    setOpen(true);
-                  }} />
+                  <>
+                    <img className="m-5 rounded-lg" src={image.src} key={index} onClick={()=>{
+                      setIndex(index);
+                      setOpen(true);
+                    }} />
+
+                    
+
+                  </>
+                  
               )
+
+
             }
           </main>
           
