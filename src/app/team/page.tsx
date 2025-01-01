@@ -15,13 +15,13 @@ export default function Teams() {
    
 
     return (
-        <div>
+        <div className="overflow-x-hidden">
 
             <div className="flex flex-row gap-2">
                 <div className="header"><span className="samkaran">OUR</span>T<span className="samkaran">EAM</span></div>
             </div>
 
-            <div className="row">
+            <div className="row overflow-x-auto">
                 <Card
                     name={clubLead.name}
                     position={clubLead.position}

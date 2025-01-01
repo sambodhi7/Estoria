@@ -10,6 +10,7 @@ interface PastEvent {
 export const pastEvents: PastEvent[] = [
 
 
+
     {
         date: "5th December 2024",
         shortTitle: "Homecoming 2.0",
