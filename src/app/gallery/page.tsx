@@ -118,7 +118,7 @@ export default function App() {
               enableImageSelection={false}
             /> */}
 
-          <main className="columns-3xs ">
+          <main className="columns-3xs ml-5 mr-10">
             {
               filteredImages.map(
                 (image, index) =>
