@@ -46,27 +46,30 @@ export default function PastEvent() {
 
   return (
     <div className="past-event-box"  >
-      <section className="timeline">
-        <Modal
-          isOpen={isOpen}
-          onOpenChange={onOpenChange}
-          placement="center"
-          scrollBehavior="inside"
-          backdrop="blur"
-          classNames={{
-            // body: "py-[50px]",
-            backdrop: "backdrop-opacity-50",
-            header: "border-b-[10px] border-[#292f46]"
-          }}
-          size="xl"
-        >
-          <ModalContent>
-            <ModalHeader className="flex flex-col gap-1 bg-transparent">{modalTitle}</ModalHeader>
-            <ModalBody>
-              <p className="mb-6">{modalContent}</p>
-            </ModalBody>
-          </ModalContent>
-        </Modal>
+      <section className="timeline ">
+        <div className="react-modals">
+          <Modal
+            isOpen={isOpen}
+            onOpenChange={onOpenChange}
+            placement="center"
+            scrollBehavior="inside"
+            backdrop="blur"
+            classNames={{
+              // body: "py-[50px]",
+              backdrop: "backdrop-opacity-50",
+              header: "border-b-[10px] border-[#292f46]"
+            }}
+            size="xl"
+          >
+            <ModalContent>
+              <ModalHeader className="flex flex-col gap-1 bg-transparent text-white">{modalTitle}</ModalHeader>
+              <ModalBody className="text-white ">
+                <p className="mb-6 text-justify">{modalContent}</p>
+              </ModalBody>
+            </ModalContent>
+          </Modal>
+        </div>
+       
 
 
         <h1 className="heading-sec">
@@ -75,7 +78,7 @@ export default function PastEvent() {
         </h1>
         <ul className="overflow-x-hidden">
           {pastEvents.map((event, index) => EventCard(event, index, onOpen))}
-        </ul>
+        </ul> 
       </section>
     </div>
     

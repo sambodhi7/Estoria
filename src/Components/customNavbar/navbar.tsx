@@ -27,7 +27,7 @@ export default function NavBar() {
 
    
     return (
-        <header className=" text-white sticky top-0 left-0 bottom-0 right-0 z-10 flex mb-9" style={{zIndex:1000000000}}>
+        <header className=" text-white sticky top-0 left-0 bottom-0 right-0 z-10 flex mb-9" style={{zIndex:10}}>
               <section style={{
                     display:"flex",
                     alignItems:"center", 
@@ -36,9 +36,9 @@ export default function NavBar() {
                     
               }} className="mx-auto p-10 ">  
                     
-                  <h5 className="flex text-5xl font-medium  samkaran w-full lg:w-auto text-wrap min-w-20">
+                  <h5 className="flex text-4xl lg:text-5xl font-medium  samkaran w-auto text-wrap min-w-10">
                       <a href="/" className="flex gap-10 items-center">
-                      <img  className="w-20 h-20 " src="/logo2.png" alt="Estoria" />
+                      <img  className="w-12 h-12 lg:w-20 lg:h-20 " src="/logo2.png" alt="Estoria" />
                       <span>Estoria </span></a>
                   </h5>
                   <div>

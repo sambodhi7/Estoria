@@ -138,8 +138,10 @@ export default function App() {
             }
           </main>
           
+          <div className="absolute" style={{zIndex:20000}}>
 
           <Lightbox
+                  
                   open={open}
                   close={()=>{
                     setOpen(false);
@@ -154,6 +156,9 @@ export default function App() {
                     )
                   }
                 />
+            
+          </div>
+          
           </>
         ) : (
           <p className="text-center text-gray-500">No images found.</p>
