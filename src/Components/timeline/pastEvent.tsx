@@ -62,8 +62,9 @@ export default function PastEvent() {
             size="xl"
           >
             <ModalContent>
-              <ModalHeader className="flex flex-col gap-1 bg-transparent text-white">{modalTitle}</ModalHeader>
+             
               <ModalBody className="text-white ">
+                <h1 className="text-3xl m-5 font-bold">{modalTitle}</h1>
                 <p className="mb-6 text-justify">{modalContent}</p>
               </ModalBody>
             </ModalContent>
